@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {FormsModule} from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
@@ -8,7 +9,7 @@ import { RegistrohvComponent } from './componentes/registrohv/registrohv.compone
 import { DrendimientoComponent } from './componentes/drendimiento/drendimiento.component';
 import { DfisicosComponent } from './componentes/dfisicos/dfisicos.component';
 import { ConsultarhvComponent } from './componentes/consultarhv/consultarhv.component';
-import { RespuestaComponent } from './entidades/respuesta/respuesta.component';
+import { Respuesta } from './entidades/respuesta';
 
 const appRoutes : Routes = [
   {path: '', component : RegistrohvComponent},
@@ -23,13 +24,13 @@ const appRoutes : Routes = [
     RegistrohvComponent,
     DrendimientoComponent,
     DfisicosComponent,
-    ConsultarhvComponent,
-    RespuestaComponent
+    ConsultarhvComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
 	HttpClientModule,
+	FormsModule,
 	RouterModule.forRoot(appRoutes)
   ],
   providers: [],
