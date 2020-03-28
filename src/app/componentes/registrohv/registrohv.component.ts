@@ -13,10 +13,10 @@ import { OperacionesService } from 'src/app/servicios/operaciones.service';
 export class RegistrohvComponent implements OnInit {
 
 	nombre: string;
-	apellidos: string;
+	apellido: string;
 	correo: string; 
 	direccion: string;
-	telefono: string;
+	telefono: number;
 	id: number;
 
   mirespuesta: Respuesta;
@@ -49,8 +49,8 @@ datosR(): void {
       //alert('Los datos estan vacios');
       //return ;
     //}
-    const x: Promise<Respuesta> =  this.servicio.agregar(this.nombre, this.apellidos, this.correo, this.direccion, this.telefono, this.id);
-
+    const x: Promise<Respuesta> =  this.servicio.agregar(this.nombre, this.apellido, this.correo, this.direccion, this.telefono, this.id);
+	alert('Usuario registrado');
     x.then((value: Respuesta) => {
       this.mirespuesta = value;
       if  (this.mirespuesta.codigo === 1){

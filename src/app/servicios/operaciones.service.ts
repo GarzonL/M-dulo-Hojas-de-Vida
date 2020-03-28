@@ -8,22 +8,22 @@ import { Respuesta } from '../entidades/respuesta';
 })
 export class OperacionesService {
 	
-	rutaservicio: string = 'http://192.168.0.17:8080/ServAuten/app/operacion/agregarB';
-  rutaservicioversion: string = 'http://192.168.0.17:8080/ServAuten/app/operacion/agregarB';
+	rutaservicio: string = 'http://192.168.0.20:8080/ServAuten/app/operacion/agregarB';
+  rutaservicioversion: string = 'http://192.168.0.20:8080/ServAuten/app/operacion/agregarB';
   
 
   jugador:Jugador;
 
   constructor(private http: HttpClient) { }
   
-  agregar(nombre:string, apellidos: string, correo:string, direccion:string, telefono:string, idusuario:number): Promise<Respuesta>{
+  agregar(nombre:string, apellido: string, correo:string, direccion:string, telefono:number, id:number): Promise<Respuesta>{
 	  const info = {
     "nombre":nombre,
-    "apellidos":apellidos,
+    "apellido":apellido,
 	"correo":correo,
 	"direccion":direccion,
 	"telefono":telefono,
-	"idusuario":idusuario
+	"id":id
    }
    return this.http.post<Respuesta>(`${this.rutaservicio}`, info).toPromise();
 }

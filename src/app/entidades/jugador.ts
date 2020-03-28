@@ -1,8 +1,8 @@
 export class Jugador {
 	nombre ?: string;
-	apellidos ?: string;
+	apellido ?: string;
 	correo ?: string; 
 	direccion ?: string;
-	telefono ?: string;
-	idusuario ?: number;
+	telefono ?: number;
+	id ?: number;
 }
