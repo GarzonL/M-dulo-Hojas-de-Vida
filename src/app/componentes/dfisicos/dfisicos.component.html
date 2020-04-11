@@ -1,3 +1,4 @@
+<body>
 <header>
 <nav id="nav" class="nav1">
 			<div class="container-nav">
@@ -11,21 +12,41 @@
 			</div>				
 		</nav>
 </header>
-
+<div class="bg">
 <div class="container col-lg-3">
 	<div class="text-center">
           <p></p>  
-         <p><strong>Datos básicos del jugador</strong>
+         <p><strong>Datos físicos del jugador</strong>
          </p>
 	
         <div class="form-group">
             <label>Peso</label>
-            <input class="form-control" type="text" name="peso" >
+            <input class="form-control" type="text" name="peso" placeholder="peso" [(ngModel)]="peso">
         </div>
         <div class="form-group">
             <label>Estatura</label>
-            <input class="form-control" type="text" name="estatura"  >
+            <input class="form-control" type="text" name="estatura"  placeholder="estatura" [(ngModel)]="estatura">
         </div>
-		<button type="button" class="btn btn-success" (click)="volver()">Volver</button>
+		<div class="form-group">
+            <label>Comentario</label>
+            <input class="form-control" type="text" name="comentario" placeholder="comentario" [(ngModel)]="comentario" >
+        </div>
+		<button type="button" class="btn btn-success" id="boton" (click)="agregarF()">Siguiente</button>
 	</div>
 </div>
+</div>
+<footer>
+        <div class="footer contenedor">
+            <div class="marca-logo">
+                <img src="" alt="">
+            </div>
+            <div class="iconos">
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-github"></i>
+            </div>
+            <p>La pasión e innovación es lo que nos distingue del resto</p>
+        </div>
+
+    </footer>
+</body>

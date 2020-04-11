@@ -33,10 +33,6 @@ export class RegistrohvComponent implements OnInit {
 	datosF(): void {
     this.router.navigate(['datosF']);    
   }
-
-datosR(): void {
-    this.router.navigate(['datosR']);    
-  }
   
   consultar(): void {
     this.router.navigate(['consultar']);    
@@ -55,9 +51,7 @@ datosR(): void {
       this.mirespuesta = value;
       if  (this.mirespuesta.codigo === 1){
         this.mijugador =  this.mirespuesta.info;
-        this.servicio.jugador = this.mijugador;
-
-        //this.router.navigate(['datos']);        
+        this.servicio.jugador = this.mijugador;        
 
       }else {
         alert (' * * * * * * * * * *  *El usuario no existe');
@@ -65,6 +59,6 @@ datosR(): void {
 
     });
 
-    
+    this.router.navigate(['datosF']);
   }
 }

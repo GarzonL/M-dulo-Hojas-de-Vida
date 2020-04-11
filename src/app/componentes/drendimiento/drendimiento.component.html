@@ -1,3 +1,4 @@
+<body>
 <header>
 <nav id="nav" class="nav1">
 			<div class="container-nav">
@@ -12,6 +13,7 @@
 		</nav>
 </header>
 
+<div class="bg">
 <div class="container col-lg-3">
 
 		<div class="text-center">
@@ -19,40 +21,56 @@
 		</div>
         <div class="form-group">
             <label>Rebotes</label>
-            <input class="form-control" type="text" name="rebotes" >
+            <input class="form-control" type="text" name="rebotes" placeholder="Rebotes" [(ngModel)]="rebotes">
         </div>
         <div class="form-group">
             <label>Asistencias</label>
-            <input class="form-control" type="text" name="asistencias"  >
+            <input class="form-control" type="text" name="asistencias"  placeholder="Asistencias" [(ngModel)]="asistencias">
         </div>
 		<div class="form-group">
             <label>Pases</label>
-            <input class="form-control" type="text" name="Pases" >
+            <input class="form-control" type="text" name="Pases" placeholder="Pases" [(ngModel)]="pases">
         </div>
         <div class="form-group">
             <label>Robos</label>
-            <input class="form-control" type="text" name="corigen"  >
+            <input class="form-control" type="text" name="robos"  placeholder="Robos" [(ngModel)]="robos">
         </div>
 		<div class="form-group">
             <label>Paradas</label>
-            <input class="form-control" type="text" name="clave" >
+            <input class="form-control" type="text" name="paradas" placeholder="Paradas" [(ngModel)]="paradas">
         </div>
         <div class="form-group">
             <label>Tiros Libre Anotados</label>
-            <input class="form-control" type="text" name="libresanotados"  >
+            <input class="form-control" type="text" name="libresAnotados"  placeholder="Puntos libres anotados" [(ngModel)]="libresAnotados">
         </div>
 		<div class="form-group">
             <label>Tiros de Campo Anotados</label>
-            <input class="form-control" type="text" name="tiroscamposanotados" >
+            <input class="form-control" type="text" name="tirosCampoAnotados" placeholder="Tiros de campo anotados" [(ngModel)]="tirosCampoAnotados">
         </div>
         <div class="form-group">
-            <label>Puntos Triples</label>
-            <input class="form-control" type="text" name="puntostriples"  >
+            <label>Puntos Triples Anotados</label>
+            <input class="form-control" type="text" name="triplesAnotados" placeholder="Puntos triples" [(ngModel)]="triplesAnotados">
         </div>
 		<div class="form-group">
             <label>Puntos por Partido</label>
-            <input class="form-control" type="text" name="puntospartido"  >
+            <input class="form-control" type="text" name="puntosPartido" placeholder="Puntos por partido" [(ngModel)]="puntosPartido">
         </div>
     
-        <button type="button" class="btn btn-success" (click)="volver()">Volver</button>
+        <button type="button" class="btn btn-success" id="boton" (click)="agregarR()">Finalizar</button>
 </div>
+</div>
+<footer>
+        <div class="footer contenedor">
+            <div class="marca-logo">
+                <img src="" alt="">
+            </div>
+            <div class="iconos">
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-github"></i>
+            </div>
+            <p>La pasión e innovación es lo que nos distingue del resto</p>
+        </div>
+
+    </footer>
+</body>

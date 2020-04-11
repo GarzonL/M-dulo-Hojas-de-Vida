@@ -1,3 +1,4 @@
+<body>
 <header>
 <nav id="nav" class="nav1">
 			<div class="container-nav">
@@ -11,11 +12,10 @@
 			</div>				
 		</nav>
 </header>
-
+<div class="bg">
 <div class="container col-lg-3">
-<form (submit)="agregar()">
         <div class="text-center">
-            <p><strong>Registro de Hojas de Vida</strong></p>
+            <p><strong>Registro Hojas de Vida</strong></p>
 		<div class="form-group">
             <label>Nombre</label>
             <input class="form-control" type="text" name="nombre" placeholder="nombre" [(ngModel)]="nombre">
@@ -41,10 +41,25 @@
             <input class="form-control" type="text" name="id" placeholder="id" [(ngModel)]="id">
         </div>
 			</div>
-			<button type="button" class="btn btn-success" (click)="datosF()">D. físicos</button>
-			<button type="button" class="btn btn-success" (click)="datosR()">D. rendimiento</button>
-		<input type="submit" name="accion" value="Registrar"/>
-    </form>
+			<button type="button" class="btn btn-success" id="boton" (click)="agregar()">Siguiente</button>
+		
+    
         
 
 </div>
+</div>
+<footer>
+        <div class="footer contenedor">
+            <div class="marca-logo">
+                <img src="" alt="">
+            </div>
+            <div class="iconos">
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-github"></i>
+            </div>
+            <p>La pasión e innovación es lo que nos distingue del resto</p>
+        </div>
+
+    </footer>
+</body>

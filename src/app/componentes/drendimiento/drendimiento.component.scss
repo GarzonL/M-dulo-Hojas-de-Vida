@@ -1,0 +1,53 @@
+body{
+	background-image: url('../../../images/fondo.jpg');
+	background-size: 95%;
+	background-position: top;
+}
+
+.container col-lg-3{
+	color:white;
+}
+
+.bg{
+	color: white;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+}
+p{
+	font-size: 25px;
+	font-style: normal;
+	text-align: center;
+	color: white;
+	font-family: "Times New Roman", Times, serif;
+}
+
+footer{
+	margin-top: 10px;
+}
+
+.marca-logo{
+  width: 40%;
+  margin: auto;
+  margin-bottom: var(--espacios);
+}
+.marca-logo img{
+  width: 100%;
+}
+.iconos{
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  width: 100%;
+}
+.fab{
+  font-size:60px;
+  color: #FFF;
+  margin-bottom: var(--espacios);
+  display: inline-block;
+}
+
+#boton{
+margin: 10px 110px 50px 110px;
+}
