@@ -1,3 +1,4 @@
+<body>
 <header>
 <nav id="nav" class="nav1">
 			<div class="container-nav">
@@ -13,7 +14,45 @@
 </header>
 
 <div class="container col-lg-3">
-	<div class="tex-center">
-		<p>Página para consultar hojas de vida</p>
-	</div>
+	
 </div>
+
+<p-table [value]="jugadores">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Correo</th>
+			<th>Direccion</th>
+			<th>Telefono</th>
+			<th>Número de Identificación</th>
+			
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-dato>
+        <tr>
+            <td>{{dato.nombre}}</td>
+            <td>{{dato.apellido}}</td>
+            <td>{{dato.correo}}</td>
+			<td>{{dato.direccion}}</td>
+			<td>{{dato.telefono}}</td>
+			<td>{{dato.id}}</td>
+        </tr>
+    </ng-template>
+</p-table>
+
+<footer>
+        <div class="footer contenedor">
+            <div class="marca-logo">
+                <img src="" alt="">
+            </div>
+            <div class="iconos">
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-github"></i>
+            </div>
+            <p>La pasión e innovación es lo que nos distingue del resto</p>
+        </div>
+    </footer>
+
+</body>

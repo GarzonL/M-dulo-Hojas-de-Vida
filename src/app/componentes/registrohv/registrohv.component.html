@@ -1,54 +1,49 @@
 <body>
-<header>
-<nav id="nav" class="nav1">
-			<div class="container-nav">
-				<div class="enlaces" id="enlaces">
-					<button type="button" class="btn btn-success" (click)="volver()">Inicio</button>
-					<button type="button" class="btn btn-success" (click)="consultar()">Consultar</button>
-				</div>
-				<div class="icono" id="open">
+    <header>
+        <nav id="nav" class="nav1">
+            <div class="container-nav">
+                <div class="enlaces" id="enlaces">
+                    <button type="button" class="btn btn-success" (click)="consultar()">Consultar</button>
+                </div>
+                <div class="icono" id="open">
                     <span>&#9776;</span>
                 </div>
-			</div>				
-		</nav>
-</header>
-<div class="bg">
-<div class="container col-lg-3">
-        <div class="text-center">
-            <p><strong>Registro Hojas de Vida</strong></p>
-		<div class="form-group">
-            <label>Nombre</label>
-            <input class="form-control" type="text" name="nombre" placeholder="nombre" [(ngModel)]="nombre">
+            </div>
+        </nav>
+    </header>
+    <div class="bg">
+        <div class="container col-lg-3">
+            <div class="text-center">
+                <p><strong>Registro Hojas de Vida</strong></p>
+                <div class="form-group">
+                    <label>Nombre</label>
+                    <input class="form-control" type="text" name="nombre" placeholder="nombre" [(ngModel)]="nombre">
+                </div>
+                <div class="form-group">
+                    <label>Apellido</label>
+                    <input class="form-control" type="text" name="apellido" placeholder="apellido" [(ngModel)]="apellido">
+                </div>
+                <div class="form-group">
+                    <label>Correo</label>
+                    <input class="form-control" type="text" name="correo" placeholder="correo" [(ngModel)]="correo">
+                </div>
+                <div class="form-group">
+                    <label>Dirección</label>
+                    <input class="form-control" type="text" name="direccion" placeholder="direccion" [(ngModel)]="direccion">
+                </div>
+                <div class="form-group">
+                    <label>Teléfono</label>
+                    <input class="form-control" type="text" name="telefono" placeholder="telefono" [(ngModel)]="telefono">
+                </div>
+                <div class="form-group">
+                    <label>Número de identificación</label>
+                    <input class="form-control" type="text" name="id" placeholder="id" [(ngModel)]="id">
+                </div>
+            </div>
+            <button type="button" class="btn btn-success" id="boton" (click)="agregar()">Siguiente</button>
         </div>
-        <div class="form-group">
-            <label>Apellido</label>
-            <input class="form-control" type="text" name="apellido" placeholder="apellido" [(ngModel)]="apellido">
-        </div>
-		<div class="form-group">
-            <label>Correo</label>
-            <input class="form-control" type="text" name="correo" placeholder="correo" [(ngModel)]="correo">
-        </div>
-		<div class="form-group">
-            <label>Dirección</label>
-            <input class="form-control" type="text" name="direccion" placeholder="direccion" [(ngModel)]="direccion">
-        </div>
-		<div class="form-group">
-            <label>Teléfono</label>
-            <input class="form-control" type="text" name="telefono" placeholder="telefono" [(ngModel)]="telefono">
-        </div>
-		<div class="form-group">
-            <label>Número de identificación</label>
-            <input class="form-control" type="text" name="id" placeholder="id" [(ngModel)]="id">
-        </div>
-			</div>
-			<button type="button" class="btn btn-success" id="boton" (click)="agregar()">Siguiente</button>
-		
-    
-        
-
-</div>
-</div>
-<footer>
+    </div>
+    <footer>
         <div class="footer contenedor">
             <div class="marca-logo">
                 <img src="" alt="">
@@ -60,6 +55,5 @@
             </div>
             <p>La pasión e innovación es lo que nos distingue del resto</p>
         </div>
-
     </footer>
 </body>

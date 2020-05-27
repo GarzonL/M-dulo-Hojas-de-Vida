@@ -46,7 +46,7 @@ export class RegistrohvComponent implements OnInit {
       //return ;
     //}
     const x: Promise<Respuesta> =  this.servicio.agregar(this.nombre, this.apellido, this.correo, this.direccion, this.telefono, this.id);
-	alert('Usuario registrado');
+	
     x.then((value: Respuesta) => {
       this.mirespuesta = value;
       if  (this.mirespuesta.codigo === 1){
@@ -54,7 +54,7 @@ export class RegistrohvComponent implements OnInit {
         this.servicio.jugador = this.mijugador;        
 
       }else {
-        alert (' * * * * * * * * * *  *El usuario no existe');
+        
       }
 
     });

@@ -10,13 +10,20 @@ import { DrendimientoComponent } from './componentes/drendimiento/drendimiento.c
 import { DfisicosComponent } from './componentes/dfisicos/dfisicos.component';
 import { ConsultarhvComponent } from './componentes/consultarhv/consultarhv.component';
 import { Respuesta } from './entidades/respuesta';
+import { EliminarhvComponent } from './componentes/eliminarhv/eliminarhv.component';
+import { OperacionesService } from 'src/app/servicios/operaciones.service';
+
+
+//PrimeNG
+import {TableModule} from 'primeng/table';
 
 const appRoutes : Routes = [
   {path: '', component : RegistrohvComponent},
   {path: 'inicio', component : RegistrohvComponent},
   {path: 'datosF', component : DfisicosComponent},
   {path: 'consultar', component : ConsultarhvComponent},
-  {path: 'datosR', component : DrendimientoComponent}]
+  {path: 'datosR', component : DrendimientoComponent},
+  {path: 'eliminar', component : EliminarhvComponent}]
 
 @NgModule({
   declarations: [
@@ -24,16 +31,18 @@ const appRoutes : Routes = [
     RegistrohvComponent,
     DrendimientoComponent,
     DfisicosComponent,
-    ConsultarhvComponent
+    ConsultarhvComponent,
+    EliminarhvComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
 	HttpClientModule,
 	FormsModule,
+	TableModule,
 	RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [OperacionesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

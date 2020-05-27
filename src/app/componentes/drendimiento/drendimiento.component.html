@@ -1,65 +1,64 @@
 <body>
-<header>
-<nav id="nav" class="nav1">
-			<div class="container-nav">
-				<div class="enlaces" id="enlaces">
-					<button type="button" class="btn btn-success" (click)="volver()">Inicio</button>
-					<button type="button" class="btn btn-success" (click)="consultar()">Consultar</button>
-				</div>
-				<div class="icono" id="open">
+    <header>
+        <nav id="nav" class="nav1">
+            <div class="container-nav">
+                <div class="enlaces" id="enlaces">
+                    <button type="button" class="btn btn-success" (click)="consultar()">Consultar</button>
+                </div>
+                <div class="icono" id="open">
                     <span>&#9776;</span>
                 </div>
-			</div>				
-		</nav>
-</header>
+            </div>
+        </nav>
+    </header>
 
-<div class="bg">
-<div class="container col-lg-3">
+    <div class="bg">
+        <div class="container col-lg-3">
 
-		<div class="text-center">
-			<p><strong>Datos de Rendimiento Físico</strong></p>
-		</div>
-        <div class="form-group">
-            <label>Rebotes</label>
-            <input class="form-control" type="text" name="rebotes" placeholder="Rebotes" [(ngModel)]="rebotes">
+            <div class="text-center">
+                <p><strong>Datos de Rendimiento Físico</strong></p>
+            </div>
+            <div class="form-group">
+                <label>Rebotes</label>
+                <input class="form-control" type="text" name="rebotes" placeholder="Rebotes" [(ngModel)]="rebotes">
+            </div>
+            <div class="form-group">
+                <label>Asistencias</label>
+                <input class="form-control" type="text" name="asistencias" placeholder="Asistencias" [(ngModel)]="asistencias">
+            </div>
+            <div class="form-group">
+                <label>Pases</label>
+                <input class="form-control" type="text" name="Pases" placeholder="Pases" [(ngModel)]="pases">
+            </div>
+            <div class="form-group">
+                <label>Robos</label>
+                <input class="form-control" type="text" name="robos" placeholder="Robos" [(ngModel)]="robos">
+            </div>
+            <div class="form-group">
+                <label>Paradas</label>
+                <input class="form-control" type="text" name="paradas" placeholder="Paradas" [(ngModel)]="paradas">
+            </div>
+            <div class="form-group">
+                <label>Tiros Libre Anotados</label>
+                <input class="form-control" type="text" name="libresAnotados" placeholder="Puntos libres anotados" [(ngModel)]="libresAnotados">
+            </div>
+            <div class="form-group">
+                <label>Tiros de Campo Anotados</label>
+                <input class="form-control" type="text" name="tirosCampoAnotados" placeholder="Tiros de campo anotados" [(ngModel)]="tirosCampoAnotados">
+            </div>
+            <div class="form-group">
+                <label>Puntos Triples Anotados</label>
+                <input class="form-control" type="text" name="triplesAnotados" placeholder="Puntos triples" [(ngModel)]="triplesAnotados">
+            </div>
+            <div class="form-group">
+                <label>Puntos por Partido</label>
+                <input class="form-control" type="text" name="puntosPartido" placeholder="Puntos por partido" [(ngModel)]="puntosPartido">
+            </div>
+
+            <button type="button" class="btn btn-success" id="boton" (click)="agregarR()">Finalizar</button>
         </div>
-        <div class="form-group">
-            <label>Asistencias</label>
-            <input class="form-control" type="text" name="asistencias"  placeholder="Asistencias" [(ngModel)]="asistencias">
-        </div>
-		<div class="form-group">
-            <label>Pases</label>
-            <input class="form-control" type="text" name="Pases" placeholder="Pases" [(ngModel)]="pases">
-        </div>
-        <div class="form-group">
-            <label>Robos</label>
-            <input class="form-control" type="text" name="robos"  placeholder="Robos" [(ngModel)]="robos">
-        </div>
-		<div class="form-group">
-            <label>Paradas</label>
-            <input class="form-control" type="text" name="paradas" placeholder="Paradas" [(ngModel)]="paradas">
-        </div>
-        <div class="form-group">
-            <label>Tiros Libre Anotados</label>
-            <input class="form-control" type="text" name="libresAnotados"  placeholder="Puntos libres anotados" [(ngModel)]="libresAnotados">
-        </div>
-		<div class="form-group">
-            <label>Tiros de Campo Anotados</label>
-            <input class="form-control" type="text" name="tirosCampoAnotados" placeholder="Tiros de campo anotados" [(ngModel)]="tirosCampoAnotados">
-        </div>
-        <div class="form-group">
-            <label>Puntos Triples Anotados</label>
-            <input class="form-control" type="text" name="triplesAnotados" placeholder="Puntos triples" [(ngModel)]="triplesAnotados">
-        </div>
-		<div class="form-group">
-            <label>Puntos por Partido</label>
-            <input class="form-control" type="text" name="puntosPartido" placeholder="Puntos por partido" [(ngModel)]="puntosPartido">
-        </div>
-    
-        <button type="button" class="btn btn-success" id="boton" (click)="agregarR()">Finalizar</button>
-</div>
-</div>
-<footer>
+    </div>
+    <footer>
         <div class="footer contenedor">
             <div class="marca-logo">
                 <img src="" alt="">

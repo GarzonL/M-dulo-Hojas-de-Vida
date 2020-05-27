@@ -5,4 +5,6 @@ export interface Respuesta {
     mensajeE: string;
 
     info: Jugador;
+	
+	jugadores: Jugador[];
 }

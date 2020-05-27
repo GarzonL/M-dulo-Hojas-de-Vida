@@ -11,11 +11,15 @@ export class OperacionesService {
 	registrarBasicos: string = 'http://192.168.0.17:8080/ServAuten/app/operacion/agregarB';
 	registrarFisicos: string = 'http://192.168.0.17:8080/ServAuten/app/operacion/agregarF';
 	registrarRendimiento: string = 'http://192.168.0.17:8080/ServAuten/app/operacion/agregarR';
-  
+	rutaconsultar: string ='http://192.168.0.17:8080/ServAuten/app/operacion/consultar';
 
   jugador:Jugador;
 
   constructor(private http: HttpClient) { }
+  
+  consultar(): Promise<Respuesta>{
+	  return this.http.get<Respuesta>(`${this.rutaconsultar}`).toPromise();
+  }
   
  agregar(nombre:string, apellido: string, correo:string, direccion:string, telefono:number, id:number): Promise<Respuesta>{
 	  const info = {

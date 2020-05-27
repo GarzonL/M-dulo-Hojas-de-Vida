@@ -40,7 +40,7 @@ agregarF() {
     //}
 	this.router.navigate(['datosR']);
     const x: Promise<Respuesta> =  this.servicio.agregarFisicos(this.peso, this.estatura, this.comentario);
-	alert('Usuario registrado');
+	
     x.then((value: Respuesta) => {
       this.mirespuesta = value;
       if  (this.mirespuesta.codigo === 1){
@@ -48,7 +48,7 @@ agregarF() {
         this.servicio.jugador = this.mijugador;        
 
       }else {
-        alert (' * * * * * * * * * *  *El usuario no existe');
+        
       }
 
     });

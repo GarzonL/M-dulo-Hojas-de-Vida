@@ -43,7 +43,7 @@ agregarR() {
       //return ;
     //}
     const x: Promise<Respuesta> =  this.servicio.agregarRendimiento(this.rebotes, this.asistencias, this.pases, this.robos, this.paradas, this.libresAnotados, this.tirosCampoAnotados, this.triplesAnotados, this.puntosPartido);
-	alert('Usuario registrado');
+	
     x.then((value: Respuesta) => {
       this.mirespuesta = value;
       if  (this.mirespuesta.codigo === 1){
@@ -51,7 +51,7 @@ agregarR() {
         this.servicio.jugador = this.mijugador;        
 
       }else {
-        alert (' * * * * * * * * * *  *El usuario no existe');
+        
       }
 
     });
